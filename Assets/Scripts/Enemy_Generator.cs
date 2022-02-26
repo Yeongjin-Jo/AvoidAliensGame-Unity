@@ -28,19 +28,11 @@ public class Enemy_Generator : MonoBehaviour
     {
         
 
-        // Debug.Log(Ending.isReset);
         if(Ending.isReset == true)
         {
-            // Debug.Log(enemy_instance[0]);
             Generator();
             Ending.isReset = false;
         }
-        
-        // if(GameObject.FindGameObjectsWithTag("Enemy").Length >= 1)
-        // {
-        //     enemy_instance = new GameObject[enemyNum];
-        //     Generator();
-        // }
 
         moveTime += Time.deltaTime;
 

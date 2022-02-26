@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
+        Debug.Log("start");
         PlayerRigid = GetComponent<Rigidbody2D>();
         PlayerCamera.transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         anim = GetComponent<Animator>();
@@ -43,8 +44,6 @@ public class PlayerController : MonoBehaviour
     {
         currentTime += Time.deltaTime;
         Playtime += Time.deltaTime;
-
-        Debug.Log(Playtime);
 
         if(Playtime > backgroundMusic[audioNum].length)
             {
@@ -74,6 +73,13 @@ public class PlayerController : MonoBehaviour
              {
                  isStart = false;
              }
+         }
+
+         if(Ending.isReset == true)
+         {
+             anim.SetBool("Disappear", false);
+             Playtime = 0f;
+             BackgroundMusicReset();
          }
     }
 
@@ -124,6 +130,7 @@ public class PlayerController : MonoBehaviour
     public void ShowDeadScreen()
     {
         anim.SetBool("Vanish", false);
+        anim.SetBool("Disappear", true);
         DeadScreen.SetActive(true);
     }
     public void BackgroundMusicReset()
