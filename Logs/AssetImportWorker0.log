@@ -1,0 +1,211 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19041) 64bit Professional' Language: 'ko' Physical Memory: 32173 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Administrator/Desktop/Git/ProjectA(modifying)
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+7104
+Successfully changed project path to: C:/Users/Administrator/Desktop/Git/ProjectA(modifying)
+C:/Users/Administrator/Desktop/Git/ProjectA(modifying)
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 52.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Administrator/Desktop/Git/ProjectA(modifying)/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   30.0.14.9649
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002829 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Domain Reload Profiling:
+	ReloadAssembly (576ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (435ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (134ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (172ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 71.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.103 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1104ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (897ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (363ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.1 MB.
+System memory in use after: 96.2 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2636.
+Total: 3.666100 ms (FindLiveObjects: 0.233800 ms CreateObjectMapping: 0.097100 ms MarkObjects: 3.257800 ms  DeleteObjects: 0.075800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Platformer Music Pak LITE/1. Sad-Melancholy
+  artifactKey: Guid(0517433b93cbfca45997a32d5d0be268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/1. Sad-Melancholy using Guid(0517433b93cbfca45997a32d5d0be268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c91e2df0b976666c31913f120016db') in 0.011548 seconds 
+  Import took 0.015255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 172.074637 seconds.
+  path: Assets/Platformer Music Pak LITE/5. Chill/Solitary Happiness.wav
+  artifactKey: Guid(f4b0691b50fe4ea4193196425595d059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/5. Chill/Solitary Happiness.wav using Guid(f4b0691b50fe4ea4193196425595d059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f903f7e466df7adefd6658236f8d2b4') in 0.128109 seconds 
+  Import took 0.132092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.537417 seconds.
+  path: Assets/Platformer Music Pak LITE/6. Epic-Environmental/Awestruck.wav
+  artifactKey: Guid(51b37cf148de402418bb63c298d48f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/6. Epic-Environmental/Awestruck.wav using Guid(51b37cf148de402418bb63c298d48f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08572bb80f514e6dd997edb6294bfa47') in 0.017611 seconds 
+  Import took 0.021326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.833411 seconds.
+  path: Assets/Platformer Music Pak LITE/6. Epic-Environmental/Starlit Skies.wav
+  artifactKey: Guid(2e01e935dc31c534e88419f62a4f5941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/6. Epic-Environmental/Starlit Skies.wav using Guid(2e01e935dc31c534e88419f62a4f5941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be701c444750fcb2c0eab0a8f0d6396') in 0.014501 seconds 
+  Import took 0.017792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.429694 seconds.
+  path: Assets/Platformer Music Pak LITE/8. Noir-BnW/The Monochrome.wav
+  artifactKey: Guid(01b139b5bcb4ab64eb361cc8938ed58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/8. Noir-BnW/The Monochrome.wav using Guid(01b139b5bcb4ab64eb361cc8938ed58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658ff045e6f7d79984b04cda676e00f8') in 0.016451 seconds 
+  Import took 0.020270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.651330 seconds.
+  path: Assets/Platformer Music Pak LITE/9. Detective-Jazz/Missing Mystery.wav
+  artifactKey: Guid(b555ae8d401faf64681b21ec86c17210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/9. Detective-Jazz/Missing Mystery.wav using Guid(b555ae8d401faf64681b21ec86c17210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc34f901ee4058c40f28fe9d234aafa') in 0.013779 seconds 
+  Import took 0.017633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.459562 seconds.
+  path: Assets/Platformer Music Pak LITE/9. Detective-Jazz/Culprit's Memoir.wav
+  artifactKey: Guid(b426191d6e81f514bb7c225b8ee167f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/9. Detective-Jazz/Culprit's Memoir.wav using Guid(b426191d6e81f514bb7c225b8ee167f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3b5a891911d0241a02a7467c606648') in 0.016068 seconds 
+  Import took 0.021045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.410659 seconds.
+  path: Assets/Platformer Music Pak LITE/9. Detective-Jazz/The Unravelling.wav
+  artifactKey: Guid(fefe2df5b21548f46af879dad9d381cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/9. Detective-Jazz/The Unravelling.wav using Guid(fefe2df5b21548f46af879dad9d381cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18928cc4b8389472279fe293be6d8523') in 0.021025 seconds 
+  Import took 0.025385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.179966 seconds.
+  path: Assets/Platformer Music Pak LITE/10. Stealth/Dark Alleyways.wav
+  artifactKey: Guid(d9105f66243b0014287dd667ac719c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/10. Stealth/Dark Alleyways.wav using Guid(d9105f66243b0014287dd667ac719c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdd791784f97fa95639945d8f22d33d') in 0.017164 seconds 
+  Import took 0.020472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.942762 seconds.
+  path: Assets/Platformer Music Pak LITE/10. Stealth/Near Death Experience.wav
+  artifactKey: Guid(0548f318e6bc89840bbf2ea4088839d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Music Pak LITE/10. Stealth/Near Death Experience.wav using Guid(0548f318e6bc89840bbf2ea4088839d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d4ada4affca0733340a4a3f9de65bb') in 0.019089 seconds 
+  Import took 0.022433 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
