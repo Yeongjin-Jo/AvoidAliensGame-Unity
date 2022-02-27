@@ -12,6 +12,10 @@ public class Title : MonoBehaviour
     [SerializeField] Image selectbarLeft_quit;
     [SerializeField] Image selectbarRight_quit;
 
+    [SerializeField] private AudioClip CursorEffectSound;
+
+    private AudioSource CursorEffectSounds;
+
 
     void Start()
     {
@@ -19,6 +23,10 @@ public class Title : MonoBehaviour
         selectbarRight_start.enabled = false;
         selectbarLeft_quit.enabled = false;
         selectbarRight_quit.enabled = false;
+
+        CursorEffectSounds = GetComponent<AudioSource>();
+
+        
     }
 
     public void StarbuttonOnClick()
@@ -34,6 +42,8 @@ public class Title : MonoBehaviour
     {
         selectbarLeft_start.enabled = true;
         selectbarRight_start.enabled = true;
+        
+        CursorEffectSounds.PlayOneShot(CursorEffectSound, 1.0f);
     }
     public void NotSelectingStart()
     {
@@ -44,6 +54,8 @@ public class Title : MonoBehaviour
     {
         selectbarLeft_quit.enabled = true;
         selectbarRight_quit.enabled = true;
+
+        CursorEffectSounds.PlayOneShot(CursorEffectSound, 1.0f);
     }
     public void NotSelectingQuit()
     {

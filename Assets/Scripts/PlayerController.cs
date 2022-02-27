@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] Camera PlayerCamera;
     [SerializeField] private GameObject DeadScreen;
+    [SerializeField] private GameObject FinishScreen;
     [SerializeField] private GameObject StartArea;
     [SerializeField] private AudioClip[] backgroundMusic;
     [SerializeField] private AudioClip deadMusic;
+    [SerializeField] private AudioClip finishMusic;
     
     private Rigidbody2D PlayerRigid;
     private Vector2 speed_vec;
@@ -35,9 +37,8 @@ public class PlayerController : MonoBehaviour
         BackgroundMusic = GetComponent<AudioSource>();
         BackgroundMusicReset();
         
-
-
         DeadScreen.SetActive(false);
+        FinishScreen.SetActive(false);
     }
 
     void Update()
@@ -78,6 +79,7 @@ public class PlayerController : MonoBehaviour
          if(Ending.isReset == true)
          {
              anim.SetBool("Disappear", false);
+             FinishScreen.SetActive(false);
              Playtime = 0f;
              BackgroundMusicReset();
          }
@@ -116,6 +118,9 @@ public class PlayerController : MonoBehaviour
         {
             isFinish = true;
             Time.timeScale = 0.0f;
+            anim.SetBool("Finish", true);
+            BackgroundMusic.clip = finishMusic;
+            BackgroundMusic.Play();
         }
         if(other.transform.tag == "Enemy" && isFinish == false && isStart == false)
         {
@@ -133,6 +138,12 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Disappear", true);
         DeadScreen.SetActive(true);
     }
+
+    public void showFinishScreen()
+    {
+        FinishScreen.SetActive(true);
+    }
+
     public void BackgroundMusicReset()
     {
         audioNum = Random.Range(0, backgroundMusic.Length);

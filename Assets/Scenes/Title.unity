@@ -1945,6 +1945,7 @@ MonoBehaviour:
   selectbarRight_start: {fileID: 698817457}
   selectbarLeft_quit: {fileID: 834618678}
   selectbarRight_quit: {fileID: 2144832253}
+  CursorEffectSound: {fileID: 8300000, guid: 6e8772b49f34d402a90016ed445d8a2f, type: 3}
 --- !u!82 &1836054003
 AudioSource:
   m_ObjectHideFlags: 0
