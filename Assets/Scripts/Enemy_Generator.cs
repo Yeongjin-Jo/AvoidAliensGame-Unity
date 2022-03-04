@@ -8,32 +8,29 @@ public class Enemy_Generator : MonoBehaviour
     [SerializeField] private int EnemySpeed;
     [SerializeField] private float SpeedPeriod;
     [SerializeField] private int enemyNum = 30;
-    [SerializeField] private Vector2[] spawnPoint;
+    [SerializeField] public Vector2[] spawnPoint;
     [SerializeField] public Vector2[] reSpawnPoint;
     
-    private GameObject[,] enemy_instance;
+    public static GameObject[,] enemy_instance;
     private Rigidbody2D EnemyRigid;
     private Vector2 speedVec;
     private float moveTime = 0f;
     private double previousNum = 0f;
     private double currentNum = 0f;
 
+    public static Vector2[] spawnPoint_static;
+    public static int enemyNum_static;
+
     void Start()
     {
+        spawnPoint_static = spawnPoint;
+        enemyNum_static = enemyNum;
         enemy_instance = new GameObject[spawnPoint.Length,enemyNum];
         Generator();
     }
 
     void Update()
     {
-        
-
-        if(Ending.isReset == true)
-        {
-            Generator();
-            Ending.isReset = false;
-        }
-
         moveTime += Time.deltaTime;
 
         currentNum = System.Math.Truncate(moveTime);
@@ -45,6 +42,8 @@ public class Enemy_Generator : MonoBehaviour
                 Move();
         }
     }
+
+
     private void Move()
     {
         for (int j = 0; j < spawnPoint.Length; j++)
@@ -64,7 +63,7 @@ public class Enemy_Generator : MonoBehaviour
         for (int j = 0; j < spawnPoint.Length; j++)
         {
             for (int i = 0; i < enemyNum; i++)
-            {
+            {        
                 enemy_instance[j,i] = Instantiate(enemy_object, new Vector3(spawnPoint[j][0], spawnPoint[j][1], 0), transform.rotation);
                 enemy_instance[j,i].transform.tag = "Enemy";
                 enemy_instance[j,i].GetComponent<SpriteRenderer>().sortingOrder = 1;

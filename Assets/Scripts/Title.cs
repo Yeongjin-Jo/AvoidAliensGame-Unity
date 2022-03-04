@@ -14,6 +14,8 @@ public class Title : MonoBehaviour
 
     [SerializeField] private AudioClip CursorEffectSound;
 
+    [SerializeField] private string nextStageName;
+
     private AudioSource CursorEffectSounds;
 
 
@@ -27,12 +29,6 @@ public class Title : MonoBehaviour
         CursorEffectSounds = GetComponent<AudioSource>();
 
         
-    }
-
-    public void StarbuttonOnClick()
-    {
-        SceneManager.LoadScene("Main");
-        Debug.Log(Time.timeScale);
     }
     public void QuitbuttonClick()
     {
@@ -61,5 +57,15 @@ public class Title : MonoBehaviour
     {
         selectbarLeft_quit.enabled = false;
         selectbarRight_quit.enabled = false;
+    }
+    public void BackToTheTitle()
+    {
+        SceneManager.LoadScene("Title");
+        Time.timeScale = 1.0f;
+    }
+    public void NextStageButton()
+    {
+        SceneManager.LoadScene(nextStageName);
+        Time.timeScale = 1.0f;
     }
 }

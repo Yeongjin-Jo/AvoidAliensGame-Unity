@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TitleSpiningStars : MonoBehaviour
 {
+    [SerializeField] private float moveSpeed;
     void Update()
     {
-        this.gameObject.transform.RotateAround(this.gameObject.transform.position, Vector3.forward, Time.deltaTime);
+        this.gameObject.transform.RotateAround(this.gameObject.transform.position, Vector3.forward, moveSpeed * Time.deltaTime);
     }
 }

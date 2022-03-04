@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("start");
         PlayerRigid = GetComponent<Rigidbody2D>();
         PlayerCamera.transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         anim = GetComponent<Animator>();
@@ -75,14 +74,14 @@ public class PlayerController : MonoBehaviour
                  isStart = false;
              }
          }
-
          if(Ending.isReset == true)
-         {
-             anim.SetBool("Disappear", false);
-             FinishScreen.SetActive(false);
-             Playtime = 0f;
-             BackgroundMusicReset();
-         }
+        {
+            anim.SetBool("Disappear", false);
+            FinishScreen.SetActive(false);
+            Playtime = 0f;
+            BackgroundMusicReset();
+            Ending.isReset = false;
+        }
     }
 
     private void Move()
@@ -128,7 +127,6 @@ public class PlayerController : MonoBehaviour
             BackgroundMusic.Play();
             Time.timeScale = 0.0f;
             anim.SetBool("Vanish", true);
-            Debug.Log("펑");    
         }
     }
     

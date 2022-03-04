@@ -212,7 +212,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1836054002}
         m_TargetAssemblyTypeName: Title, Assembly-CSharp
-        m_MethodName: StarbuttonOnClick
+        m_MethodName: NextStageButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1085,6 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496e3eabf76087e45941f4cdc499f83a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!212 &1048165485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1946,6 +1947,7 @@ MonoBehaviour:
   selectbarLeft_quit: {fileID: 834618678}
   selectbarRight_quit: {fileID: 2144832253}
   CursorEffectSound: {fileID: 8300000, guid: 6e8772b49f34d402a90016ed445d8a2f, type: 3}
+  nextStageName: Map01
 --- !u!82 &1836054003
 AudioSource:
   m_ObjectHideFlags: 0
