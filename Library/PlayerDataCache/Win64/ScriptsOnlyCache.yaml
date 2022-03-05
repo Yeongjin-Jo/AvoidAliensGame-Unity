@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - EnemyPrefabScript
     - Enemy_Generator
     - PlayerController
+    - RespawnPoint
     - Title
     - TitleMainCharacter
     - TitleSpiningStars
@@ -105,7 +106,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4810}
     - Class: 114
-      Script: {instanceID: 5408}
+      Script: {instanceID: 5014}
+    - Class: 114
+      Script: {instanceID: 5410}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -196,7 +199,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4810}
     - Class: 114
-      Script: {instanceID: 5408}
+      Script: {instanceID: 5014}
+    - Class: 114
+      Script: {instanceID: 5410}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -589,7 +594,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 6c5f28699e05b69f239c1ab639a151e3
+      Hash: 9f42e0afe4cd20311d398ccac4fc227a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyPrefabScript
@@ -775,6 +780,12 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: 4fddfd567caa200fc114056f606a53e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RespawnPoint
+  - hash:
+      serializedVersion: 2
       Hash: 28cfb4bd305dd11c6326cc3ee7c14138
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -850,4 +861,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/Main.unity
   - Assets/Scenes/Map01.unity
-  playerPath: C:/Users/Administrator/Desktop/Git/Game2/ProjectA.exe
+  playerPath: C:/Users/Administrator/Desktop/Git/Game/ProjectA.exe

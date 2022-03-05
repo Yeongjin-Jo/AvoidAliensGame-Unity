@@ -173,14 +173,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad358d482da70a4f8e4fcde70dd75b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint:
-  - {x: -30, y: 7}
-  - {x: -30, y: 7}
-  - {x: -2, y: -24}
-  - {x: 10, y: -24}
-  - {x: -2, y: -14}
-  - {x: 10, y: -14}
-  - {x: -2, y: -4}
-  - {x: 10, y: -4}
-  - {x: -2, y: 6}
-  - {x: 10, y: 6}
+  respawnPoint_Main: {fileID: 8238481318163613971, guid: 224c0ec0c3ccde64ea2e0d0bb4588597, type: 3}
+  respawnPoint_Map01: {fileID: 2933571422779136402, guid: 19d2dac7dccb70241905f11ae7442591, type: 3}
